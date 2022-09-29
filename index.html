@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>Ref.TF - Automated Team Fortress 2 Trading Bots</title>
+
+        <style>
+            body {
+                background-color: #000000;
+                color: #FFFFFF;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                margin: 0;
+                padding: 0;
+            }
+            .navbar {
+                overflow: hidden;
+                width: 100%;
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar-inner {
+                width: 100%;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 0 20px;
+            }
+            .navbar a {                
+                display: block;
+                color: darkslategray;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                float: left;
+                font-weight: 700;
+            }
+            .nav{
+                margin: 0;
+                display: flex;
+                align-items: center;
+                float: center;
+                list-style-type: none;
+            }
+            .navbar a:hover {
+                background-color: lightgreen;
+                color: white;
+                transition: 0.25s;
+            }
+            .container {
+                width: 100%;
+                max-width: 1200px;
+                padding: 0 20px;
+                margin: 0 auto;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -10px;
+            }
+            .span12{
+                width: 100%;
+                padding: 0 10px;
+            }
+            .headtitle{
+                font-family: 'Roboto', sans-serif;
+                font-size: 50px;
+                font-weight: 600;
+                padding: 0;
+                text-align: center;
+                margin: 0;
+                margin-top: 35px;
+            }
+            .undertitle{
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0;
+                margin-top: 5px;
+                padding: 0;
+                text-align: center;
+            }
+            .status{
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 2px;
+                padding: 0;
+                text-align: center;
+                color: #00ff00;
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+            }
+            .status:hover{
+                color: white;
+                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white;
+                transition:cubic-bezier(1, 0, 0, 1) 0.5s;
+            }
+            .specialcontainer{
+                background-color: white;
+                width: 100%;
+                max-width: 1200px;
+                padding: 0 20px;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .specialheadtitle{
+                width: 100%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 32px;
+                font-weight: 600;
+                padding: 0;
+                text-align: center;
+                margin: 0;
+                margin-top: 35px;
+                color: darkslategray;
+            }
+            .specialundertitle{
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                margin: 0;
+                margin-top: 5px;
+                padding: 0;
+                text-align: center;
+                color: darkslategray;
+            }
+            .tradingoption{
+                font-family: 'Roboto', sans-serif;
+                display: inline-block;
+                font-size: 42px;
+                font-weight: 600;
+                text-align: center;
+                color: #00ffff;
+                margin: 5px;
+                border-radius: 5px;
+                border: 1px solid darkslategray;
+                width: 160px;
+                height: 160px;
+                line-height: 160px;
+                background: linear-gradient(to bottom, #1e90ff 0%,#004fff 100%);
+            }
+            .tradingoption:hover{
+                background: linear-gradient(to bottom, #004fff 0%,#1e90ff 100%);
+                transition: 0.25s;
+            }
+            .tradingspan{
+                display: flex;
+                flex-wrap: wrap;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 750px;
+                margin: 0 auto;
+            }
+            .tradingrow{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: 0 -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">Ref.TF</a>
+                    <ul class="nav">
+                        <li><a href="#">Trade</a></li>
+                        <li><a href="#">Raffles</a></li>
+                        <li><a href="#">Auction</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Chat</a></li>
+                        <li><a href="#">Servers</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1 class="headtitle">Welcome to Ref.TF</h1>
+                    <h2 class="undertitle">An automated banking site that changes the way you trade</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="span12">
+                    <h2 class="status">Steam API is up</h2>
+                    <h2 class="status">Trading is up</h2>
+                    <h2 class="status">0 Public raffles</h2>
+                </div>
+            </div> 
+        </div>
+
+        <div class="specialcontainer">
+            <div class="row">
+                <div class="span12">
+                    <h1 class="specialheadtitle">What would you like to trade?</h1>
+                    <h2 class="specialundertitle">Choose one of the categories below</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="tradingrow">
+                <div class="tradingspan">
+                    <h2 class="tradingoption">Guns</h2>
+                    <h2 class="tradingoption">Hats</h2>
+                    <h2 class="tradingoption">Keys</h2>
+                    <h2 class="tradingoption">Tools</h2>
+                    <h2 class="tradingoption">MvM</h2>
+                    <h2 class="tradingoption">Strange</h2>
+                    <h2 class="tradingoption">Game</h2>
+                    <h2 class="tradingoption">Skins</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
